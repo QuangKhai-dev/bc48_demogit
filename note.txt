@@ -10,3 +10,5 @@ B3: Đẩy các đoạn code lên trên github lưu trữ bằng 3 bước thầ
     - Git status sẽ giúp chúng ta kiểm tra các file đang nằm trong khu vực staging area
     - git reset sẽ giúp chúng ta trả về trạng thái ban đầu chưa đưa lên staging area 
     - Git add . sẽ giúp đẩy tất cả các file có sự thay đổi lên khu vực staging area
+
+Git pull giúp lấy sự thay đổi code mới nhất của nhánh từ trên remote repository về
