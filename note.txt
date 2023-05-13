@@ -28,3 +28,8 @@ Lưu ý khi tạo một nhánh: khi chúng ta tạo một nhánh, thì tất c�
 Thực hành tạo nhánh và đẩy nhánh lên trên remote repository
 B1: Tạo nhánh và chuyển sang nhánh đó 
 B2: đẩy những sự thay đổi lên staging area, sau đó tạo commit và dùng lệnh git push -u origin tenNhanhMoi vì nhánh này lần đầu tiên đẩy lên remote repository 
+
+
+Merge nhánh: khi merge nhánh cần xác định xem nhánh nào sẽ lấy code vào bên trong
+trước tiên mình xác định sẽ lấy tất cả code từ nhánh devKhai bỏ vào nhánh main 
+đi tới ngay tại nhánh sẽ được thêm code vào và chạy lệnh git merge tenNhanhDuocMergeVao
