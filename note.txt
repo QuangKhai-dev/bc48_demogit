@@ -35,3 +35,12 @@ trước tiên mình xác định sẽ lấy tất cả code từ nhánh devKhai
 đi tới ngay tại nhánh sẽ được thêm code vào và chạy lệnh git merge tenNhanhDuocMergeVao
 
 Ở đây mình test lệnh git merge lần thứ 2
+
+Các bước nghiệp vụ sau này khi đi làm sử dụng git
+Khi mới bắt đầu đi làm sẽ tạo ra một nhánh riêng của chúng ta
+Sẽ tạo ra một bản sao của nhánh chính trên remote repository xuống local bằng các bước
+- B1 : dùng lệnh git branch -a để kiểm tra xem tên nhánh chính trên remote là nhánh nào
+- B2 : git checkout tenNhanhChinhTrenRemote để chúng ta chuyển sang nhánh chính trên remote 
+- B3 : git checkout -b tenNhanh, lưu ý khi tạo nhánh mới này ta đặt tên nhánh trùng với tên nhánh chính trên remote để tránh bị lỗi khi sử dụng lệnh pull về 
+- B4 : sau này khi có bất kì sự thay đổi từ nhánh chính, ta sẽ dùng lệnh git checkout đi tới nhánh chính và chạy 2 lệnh git fetch và git pull để có thể lấy được code mới nhất từ nhánh chính về cho nhánh bản sao nhánh chính dưới local 
+- B5 : sẽ đi về lại nhánh chúng ta và sử dụng lệnh git merge để có thể merge code mới nhất từ nhánh chính vào nhánh chúng ta để tránh việc bị xung đột code với những thành viên khác 
