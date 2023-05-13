@@ -12,3 +12,19 @@ B3: Đẩy các đoạn code lên trên github lưu trữ bằng 3 bước thầ
     - Git add . sẽ giúp đẩy tất cả các file có sự thay đổi lên khu vực staging area
 
 Git pull giúp lấy sự thay đổi code mới nhất của nhánh từ trên remote repository về
+
+
+Tạo Nhánh (Branch)
+-Lệnh tạo nhánh: git branch tenNhanh
+vd tạo một nhánh có tên devKhai
+-Lệnh để kiểm tra nhánh đã tạo: git branch 
+-Lệnh để chuyển sang một nhánh khác: git checkout tenNhanh
+Khi chúng ta có một số sự thay đổi code bên một nhánh, khi chuyển qua một nhánh mới, cần phải thực hiện 2 lệnh, git add . để đẩy tất cả file thay đổi lên staging area và sau đó mình cần chạy lệnh git commit -m "message" để ghi lại phiên bản code đã thay đổi tại nhánh đó 
+-Lệnh tạo ra một nhánh và chuyển tới nhánh đó: git checkout -b tenNhanh
+Lưu ý khi tạo một nhánh: khi chúng ta tạo một nhánh, thì tất cả code có trong nhánh đó sẽ giống với code của nhánh mà chúng ta đứng ngay đó tạo 
+
+-Lệnh để xoá một nhánh: git branch -D tenNhanh
+
+Thực hành tạo nhánh và đẩy nhánh lên trên remote repository
+B1: Tạo nhánh và chuyển sang nhánh đó 
+B2: đẩy những sự thay đổi lên staging area, sau đó tạo commit và dùng lệnh git push -u origin tenNhanhMoi vì nhánh này lần đầu tiên đẩy lên remote repository 
